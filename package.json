@@ -1,0 +1,27 @@
+{
+  "name": "backend_new",
+  "version": "1.0.0",
+  "description": "backend admin for catalog",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "catalog"
+  ],
+  "author": "fusionx project",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.1",
+    "express": "^4.17.3",
+    "fs": "^0.0.1-security",
+    "jsonwebtoken": "^8.5.1",
+    "jwt-decode": "^3.1.2",
+    "multer": "^1.4.5-lts.1",
+    "pg": "^8.7.3",
+    "postgres": "^3.2.4",
+    "sequelize": "^6.21.3"
+  }
+}
