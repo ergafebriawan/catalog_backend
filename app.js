@@ -6,7 +6,7 @@ const __basedir = path.resolve()
 const app = express();
 dotenv.config();
 
-let whitelist = ["http://localhost:8080"];
+let whitelist = ["http://localhost:8080", "http://localhost:3000"];
 let corsOptions = {
   origin: function (origin, callback) {
     if (whitelist.indexOf(origin) !== -1 || !origin) {

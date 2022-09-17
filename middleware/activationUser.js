@@ -4,7 +4,7 @@ const User = db.user;
 validationActivation = (req, res, next) => {
   User.findOne({
     where: {
-      id_user: req.body.id_user,
+      id_user: req.params.id_user,
     },
   })
     .then((result) => {

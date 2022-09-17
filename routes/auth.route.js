@@ -12,5 +12,5 @@ module.exports = (app) => {
 
   app.post('/api/auth/register', middleware.isUserExist, controller.register)
   app.post('/api/auth/login', middleware.checkActivation, controller.login)
-  app.put('/api/auth/activation', middleware.validationActivation, controller.verifiedAccount)
+  app.get('/activation/:id_user', middleware.validationActivation, controller.verifiedAccount)
 }
